@@ -1,0 +1,150 @@
+@media (max-width: 768px) {
+  .info-orientation,
+  .info-campus,
+  .info-guest {
+    display: none;
+  }
+
+  .info-orientation-mobile,
+  .info-campus-mobile,
+  .info-guest-mobile {
+    display: block;
+  }
+}
+
+/* Show desktop images only on large screens */
+@media (min-width: 769px) {
+  .info-orientation,
+  .info-campus,
+  .info-guest {
+    display: block;
+  }
+
+  /* Hide all mobile versions */
+  .info-orientation-mobile,
+  .info-campus-mobile,
+  .info-guest-mobile,
+  .icon-mobile {
+    display: none !important;
+  }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html, body{
+    font-family: MuseoModerno;
+    background-color: #F6F4F0;
+    margin:0;
+    padding:0;
+    border: 0;
+    width: 100%;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+header {
+  background-color: #F6F4F0;
+  padding: 10px 50px;
+}
+
+/* Header container */
+/* Global reset */
+body {
+  margin: 0;
+  font-family: 'MuseoModerno', sans-serif;
+  background-color: #F6F4F0;
+}
+
+/* Header layout */
+header {
+  display: flex;
+  justify-content: center; /* centers the nav */
+  align-items: center;
+  position: relative; /* allows logo positioning */
+  background-color: #F6F4F0;
+  padding: 20px 0;
+}
+
+/* Reset and body */
+body {
+  margin: 0;
+  font-family: 'MuseoModerno', sans-serif;
+  background-color: #F6F4F0;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: center;  /* centers nav */
+  align-items: center;
+  position: relative;       /* allows logo absolute positioning */
+  height: 100px;
+  background-color: #F6F4F0;
+  padding: 0 50px;
+}
+
+/* Global reset */
+body {
+  margin: 0;
+  font-family: 'MuseoModerno', sans-serif;
+  background-color: #F6F4F0;
+}
+
+/* Header layout */
+header {
+  display: flex;
+  justify-content: center; /* centers the nav */
+  align-items: center;
+  position: relative; /* allows logo positioning */
+  background-color: #F6F4F0;
+  padding: 20px 0;
+}
+
+/* Logo fixed on top-left */
+.logo {
+  position: absolute;
+  top: 0px;
+  bottom: 5px;
+  left: 0px;
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+/* Navigation menu centered */
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  bottom: 20px;
+}
+
+/* Main symbol section */
+.symbol-box {
+  width: 100%;                 /* adjust box width */
+  height: 850px;                /* adjust box height */
+  border: 1px solid #3B3A36;   /* visible border lines */
+  display: flex;                /* enables centering inside */
+  justify-content: center;      /* horizontal center */
+  align-items: center;          /* vertical center */
+  background-color: #F6F4F0;    /* optional box background */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* optional shadow */
+  margin-left: 0%;
+}
+
+.main-symbol {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  display: block;
+  margin-left: 60px; 
+}
